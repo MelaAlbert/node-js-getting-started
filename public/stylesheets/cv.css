@@ -9,17 +9,20 @@
 #fr {
   display: flex;
   flex-direction: row;
+  min-height: 100%;
 }
 
 #en {
   display: none;
   flex-direction: row;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #f9f9f9;
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
@@ -34,6 +37,7 @@ h1, h2, h3 {
   margin: 0 20px 0 0;
   background-color: #8c9eff;
   z-index: 3;
+  justify-content: space-between;
 }
 .left .picture_container {
   display: flex;
@@ -81,9 +85,10 @@ h1, h2, h3 {
   margin: 0 20px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   z-index: 1;
+  justify-content: space-between;
 }
 .right .right_container {
-  margin: 10px 0;
+  margin: 10px 0 50px;
 }
 .right .flag_container {
   display: flex;
