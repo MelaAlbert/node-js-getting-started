@@ -1,3 +1,11 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 #fr {
   display: flex;
   flex-direction: row;
@@ -65,6 +73,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .right .title_container {
   display: flex;
