@@ -1,0 +1,143 @@
+#fr {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  color: #222222;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 250px;
+  margin: 0 20px 0 0;
+  background-color: #8c9eff;
+}
+.left .picture_container {
+  display: flex;
+  justify-content: center;
+}
+.left .picture_container .pic {
+  border-radius: 500PX;
+  margin: 20px;
+}
+.left .picture_container .pic img {
+  height: 120px;
+  width: 120px;
+  border-radius: 500px;
+}
+.left .left_side_title {
+  width: 100%;
+  text-align: center;
+  background-color: #222222;
+  color: #8c9eff;
+}
+.left .left_side_title h3 {
+  padding: 3px;
+  color: #8c9eff;
+}
+.left .hobbies_container {
+  margin-top: auto;
+}
+.left .left_side_content {
+  margin: 0 20px;
+}
+.left .about_container {
+  text-align: justify;
+}
+.left .icon_content {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.right .title_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.right .title_container .name_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+}
+.right .title_container .name_container .name {
+  margin: 0 10px;
+  color: #8c9eff;
+}
+.right .title_container h3 {
+  margin-top: 5px;
+}
+.right .education_content {
+  display: flex;
+  justify-content: space-between;
+}
+.right .work_experience {
+  display: flex;
+  justify-content: space-between;
+}
+.right .info_right {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.right .info_right .right_side_dot {
+  color: #8c9eff;
+  margin: 10px;
+}
+.right .info_right .right_side_dot :first-child {
+  font-weight: 400;
+}
+.right .info_right .recent_dot :first-child {
+  font-weight: 900;
+}
+.right .right_side_text {
+  flex-basis: 100%;
+}
+.right .right_side_text .content_title {
+  margin-bottom: 5px;
+}
+.right .right_side_text .content_subtitle {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+.right .reference_content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.right .reference_content .reference {
+  min-width: 50%;
+}
+.right .right_side_title {
+  border-bottom: 5px solid #8c9eff;
+  margin-bottom: 10px;
+  display: flex;
+}
+.right .right_side_title h3 {
+  margin-bottom: 0;
+}
+.right .right_side_title .icon_title_right {
+  height: 40PX;
+  width: 40px;
+  font-size: 30px;
+  margin: 0 15px;
+  color: #8c9eff;
+}
+
+/*# sourceMappingURL=cv.css.map */
