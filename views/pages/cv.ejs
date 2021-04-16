@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="/stylesheets/cv.css">
     <link href="/fontawesome/css/all.css" rel="stylesheet">
 </head>
+<script>
+    function changelangFr() {
+        const en = document.getElementById('en');
+        const fr = document.getElementById('fr');
+        en.style.display = 'none';
+        fr.style.display = 'flex';
+    }
+    function changelangEn() {
+        const en = document.getElementById('en');
+        const fr = document.getElementById('fr');
+        en.style.display = 'flex';
+        fr.style.display = 'none';
+    }
+</script>
 <body>
     <div id="fr">
         <div class="left">
@@ -22,15 +36,15 @@
                 </div>
                 <div class="left_side_content">
                     Adresse<br>
-                    Nice, France<br><br>
+                    81 Avenue de Valrose, Nice, France<br><br>
                     Téléphone<br>
-                    06 46 72 69 12<br><br>
+                    (+33) 06 46 72 69 12<br><br>
                     Email<br>
                     <a href="mailto:albertmelanie@gmail.com">albertmelanie@gmail.com</a><br><br>
                     Site-web<br>
                     <a href="https://melanie-albert.herokuapp.com/">melanie-albert.herokuapp.com</a><br><br>
                     Skype<br>
-                    TestSkype<br>
+                    melanie26<br>
                 </div>
             </div>
             <div class="about_container">
@@ -38,7 +52,7 @@
                     <h3>À PROPOS DE MOI</h3>
                 </div>
                 <div class="left_side_content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus eu enim vitae tempus. Aliquam eget faucibus nisi. Nam ligula augue, cursus quis vulputate id, dignissim id ante. Nulla mollis risus ut lorem ultrices, at accumsan mi rhoncus. Sed tristique purus in dui finibus, eget interdum ex venenatis.
+                    Passionée par la communication depuis mon plus jeune age, je suis actuellement a la recherche d'un stage de deux mois.<br>Je peux affirmer que tous les aspects de la communication et de l'évenementiel me plaisent.
                 </div>
             </div>
             <div class ="hobbies_container">
@@ -47,22 +61,26 @@
                 </div>
                 <div class="icon_content">
                     <i class="fas fa-hiking"></i>
-                    <i class="fas fa-table-tennis"></i>
+                    <i class="fas fa-plane-departure"></i>
                     <i class="fas fa-guitar"></i>
                 </div>
             </div>
         </div>
         <div class="right">
+            <div class="flag_container">
+                <img class="flag" src="/fr.svg" onclick="changelangFr()">
+                <img class="flag" src="/en.svg" onclick="changelangEn()">
+            </div>
             <div class="title_container">
                 <h1 class="name_container">MELANIE <div class="name">ALBERT</div></h1>
-                <h3 class="subtitle">Responsable de communication</h3>
+                <h3 class="subtitle">Étudiante en communication</h3>
             </div>
-            <div class="education_container">
+            <div class="education_container right_container">
                 <div class="title right_side_title">
                     <div class="icon_title_right">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>FORMATION</h3>
+                    <h3>FORMATIONS</h3>
                 </div>
                 <div class="right_side_content">
                     <div class="education_content">
@@ -71,7 +89,7 @@
                                 <i class="fas fa-circle"></i>
                             </div>
                             <div class="right_side_info">
-                                2018-2020<br>
+                                2019-2022<br>
                                 Nice
                             </div>
                         </div>
@@ -79,7 +97,7 @@
                             <h4 class="content_title">UNIVERSITE COTE D'AZUR</h4>
                             <div class="content_subtitle">Licence Sciences de l'information et de la Communication</div>
                             <div class="content_text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus eu enim vitae tempus. Aliquam eget faucibus nisi. Nam ligula augue, cursus quis vulputate id, dignissim id ante. Nulla mollis risus ut lorem ultrices, at accumsan mi rhoncus. Sed tristique purus in dui finibus, eget interdum ex venenatis.
+                                Je suis actuellement en deuxieme année de licence Sciences de l'information et de la Communication au campus Carlone a Nice.<br> Je devrais terminer ma licence en 2022.
                             </div>
                         </div>
                     </div>
@@ -89,26 +107,45 @@
                                 <i class="fas fa-circle"></i>
                             </div>
                             <div class="right_side_info">
-                                2018-2020<br>
-                                Nice
+                                2016-2019<br>
+                                La Ciotat
                             </div>
                         </div>
                         <div class="right_side_text">
-                            <h4 class="content_title">LYCEE BENJAMIN FRANKLIN</h4>
-                            <div class="content_subtitle">Filiere Economique et Sociale</div>
+                            <h4 class="content_title">LYCEE AUGUSTE ET LOUIS LUMIERE</h4>
+                            <div class="content_subtitle">Filiere Littéraire</div>
                             <div class="content_text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus eu enim vitae tempus. Aliquam eget faucibus nisi. Nam ligula augue, cursus quis vulputate id, dignissim id ante. Nulla mollis risus ut lorem ultrices, at accumsan mi rhoncus. Sed tristique purus in dui finibus, eget interdum ex venenatis.
+                                Baccaulauréat Mention AB <br>
+                                Étude Litteraire durant mes trois années de lycée, j'y ai developpé le gout des langues et de la communication.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education_content">
+                        <div class="info_right">
+                            <div class="right_side_dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="right_side_info">
+                                2012-2016<br>
+                                Saint Cyr sur mer
+                            </div>
+                        </div>
+                        <div class="right_side_text">
+                            <h4 class="content_title">COLLEGE ROMAIN BLANCHE</h4>
+                            <div class="content_subtitle">Filiere Générale</div>
+                            <div class="content_text">
+                                Brevet mention AB <br>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="experience_container">
+            <div class="experience_container right_container">
                 <div class="title right_side_title">
                     <div class="icon_title_right">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3>EXPERIENCE PROFESSIONELLE</h3>
+                    <h3>EXPERIENCES PROFESSIONELLES</h3>
                 </div>
                 <div class="right_side_content">
                     <div class="work_experience">
@@ -117,15 +154,15 @@
                                 <i class="fas fa-circle"></i>
                             </div>
                             <div class="right_side_info">
-                                2018-2020<br>
-                                Nice
+                                2018-2021<br>
+                                Saint Cyr sur mer
                             </div>
                         </div>
                         <div class="right_side_text">
-                            <h4 class="content_title">UNIVERSITE COTE D'AZUR</h4>
-                            <div class="content_subtitle">Licence Sciences de l'information et de la Communication</div>
+                            <h4 class="content_title">MCDONALD's</h4>
+                            <div class="content_subtitle">Équipiere Polyvalente</div>
                             <div class="content_text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus eu enim vitae tempus. Aliquam eget faucibus nisi. Nam ligula augue, cursus quis vulputate id, dignissim id ante. Nulla mollis risus ut lorem ultrices, at accumsan mi rhoncus. Sed tristique purus in dui finibus, eget interdum ex venenatis.
+                                Emploi étudiant a coté de mes études, je m'occupe de différentes taches, allant de l'accueil des clients, la prise de commande et l'encaissement jusqu'au service à table ainsi que la propreté et la sureté du restaurant.
                             </div>
                         </div>
                     </div>
@@ -135,39 +172,21 @@
                                 <i class="fas fa-circle"></i>
                             </div>
                             <div class="right_side_info">
-                                2018-2020<br>
-                                Nice
+                                2019<br>
+                                Saint Cyr sur mer
                             </div>
                         </div>
                         <div class="right_side_text">
-                            <h4 class="content_title">UNIVERSITE COTE D'AZUR</h4>
-                            <div class="content_subtitle">Licence Sciences de l'information et de la Communication</div>
+                            <h4 class="content_title">CASINO</h4>
+                            <div class="content_subtitle">Hôtesse d'accueil</div>
                             <div class="content_text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus eu enim vitae tempus. Aliquam eget faucibus nisi. Nam ligula augue, cursus quis vulputate id, dignissim id ante. Nulla mollis risus ut lorem ultrices, at accumsan mi rhoncus. Sed tristique purus in dui finibus, eget interdum ex venenatis.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_experience">
-                        <div class="info_right">
-                            <div class="right_side_dot">
-                                <i class="fas fa-circle"></i>
-                            </div>
-                            <div class="right_side_info">
-                                2018-2020<br>
-                                Nice
-                            </div>
-                        </div>
-                        <div class="right_side_text">
-                            <h4 class="content_title">UNIVERSITE COTE D'AZUR</h4>
-                            <div class="content_subtitle">Licence Sciences de l'information et de la Communication</div>
-                            <div class="content_text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus eu enim vitae tempus. Aliquam eget faucibus nisi. Nam ligula augue, cursus quis vulputate id, dignissim id ante. Nulla mollis risus ut lorem ultrices, at accumsan mi rhoncus. Sed tristique purus in dui finibus, eget interdum ex venenatis.
+                                Hôtesse a l'accueil du magasin, j'étais charger de guider et informer les clients ainsi que de repondre a leur questions ou demandes précises (retour etc..)
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="experience_container">
+            <div class="experience_container right_container">
                 <div class="title right_side_title">
                     <div class="icon_title_right">
                         <i class="fas fa-pencil-alt"></i>
@@ -177,21 +196,212 @@
                 <div class="reference_content">
                     <div class="reference">
                         <div class="right_side_text">
-                            <h4 class="content_title">MAXIME TEST</h4>
-                            <div class="content_subtitle">Directeur, mon agence</div>
+                            <h4 class="content_title">BRUCE WAYNE</h4>
+                            <div class="content_subtitle">Directeur, Justice League</div>
                             <div class="content_text">
-                                Telephone:<br>
-                                Email:
+                                Telephone: 06 12 34 56 78 90<br>
+                                Email: bruce.wayne@wayneenterprises.com
                             </div>
                         </div>
                     </div>
                     <div class="reference">
                         <div class="right_side_text">
-                            <h4 class="content_title">MAXIME TEST</h4>
-                            <div class="content_subtitle">Directeur, mon agence</div>
+                            <h4 class="content_title">CLARK KENT</h4>
+                            <div class="content_subtitle">Jounaliste, Daily Planet</div>
                             <div class="content_text">
-                                Telephone:<br>
-                                Email:
+                                Telephone: 06 09 87 65 43 21<br>
+                                Email: clark.kent@dailyplanet.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="en">
+        <div class="left">
+            <div class="picture_container">
+                <div class="pic">
+                    <img src="/CV-photo.jpeg">
+                </div>
+            </div>
+            <div class="contact_container">
+                <div class="title left_side_title">
+                    <h3>CONTACT</h3>
+                </div>
+                <div class="left_side_content">
+                    Address<br>
+                    81 Avenue de Valrose, Nice, France<br><br>
+                    Phone<br>
+                    (+33) 06 46 72 69 12<br><br>
+                    Mail<br>
+                    <a href="mailto:albertmelanie@gmail.com">albertmelanie@gmail.com</a><br><br>
+                    Website<br>
+                    <a href="https://melanie-albert.herokuapp.com/">melanie-albert.herokuapp.com</a><br><br>
+                    Skype<br>
+                    melanie26<br>
+                </div>
+            </div>
+            <div class="about_container">
+                <div class="title left_side_title">
+                    <h3>ABOUT ME</h3>
+                </div>
+                <div class="left_side_content">
+                    Passionate about communication since I was young, I am currently looking for a two-month internship.<br> I can say that I like all aspects of communication and events organisation.                </div>
+            </div>
+            <div class ="hobbies_container">
+                <div class="title left_side_title">
+                    <h3>INTEREST</h3>
+                </div>
+                <div class="icon_content">
+                    <i class="fas fa-hiking"></i>
+                    <i class="fas fa-plane-departure"></i>
+                    <i class="fas fa-guitar"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="flag_container">
+                <img class="flag" src="/fr.svg" onclick="changelangFr()">
+                <img class="flag" src="/en.svg" onclick="changelangEn()">
+            </div>
+            <div class="title_container">
+                <h1 class="name_container">MELANIE <div class="name">ALBERT</div></h1>
+                <h3 class="subtitle">Communication Student</h3>
+            </div>
+            <div class="education_container right_container">
+                <div class="title right_side_title">
+                    <div class="icon_title_right">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>EDUCATIONS</h3>
+                </div>
+                <div class="right_side_content">
+                    <div class="education_content">
+                        <div class="info_right">
+                            <div class="right_side_dot recent_dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="right_side_info">
+                                2019-2022<br>
+                                Nice
+                            </div>
+                        </div>
+                        <div class="right_side_text">
+                            <h4 class="content_title">UNIVERSITE COTE D'AZUR</h4>
+                            <div class="content_subtitle">Licence Sciences de l'information et de la Communication</div>
+                            <div class="content_text">
+                                I am currently in my second year of a Bachelor's degree in Information and Communication Sciences at the Carlone campus in Nice.<br> I should finish my license in 2022.                            </div>
+                        </div>
+                    </div>
+                    <div class="education_content">
+                        <div class="info_right">
+                            <div class="right_side_dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="right_side_info">
+                                2016-2019<br>
+                                La Ciotat
+                            </div>
+                        </div>
+                        <div class="right_side_text">
+                            <h4 class="content_title">LYCEE AUGUSTE ET LOUIS LUMIERE</h4>
+                            <div class="content_subtitle">Literary study</div>
+                            <div class="content_text">
+                                High school degree with honors <br>
+                                Literary study during my three years of high school, I developed a taste for languages and communication.                            </div>
+                        </div>
+                    </div>
+                    <div class="education_content">
+                        <div class="info_right">
+                            <div class="right_side_dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="right_side_info">
+                                2012-2016<br>
+                                Saint Cyr sur mer
+                            </div>
+                        </div>
+                        <div class="right_side_text">
+                            <h4 class="content_title">COLLEGE ROMAIN BLANCHE</h4>
+                            <div class="content_subtitle">General</div>
+                            <div class="content_text">
+                                Middle school Degree with honors <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience_container right_container">
+                <div class="title right_side_title">
+                    <div class="icon_title_right">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>WORK EXPERIENCES</h3>
+                </div>
+                <div class="right_side_content">
+                    <div class="work_experience">
+                        <div class="info_right">
+                            <div class="right_side_dot recent_dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="right_side_info">
+                                2018-2021<br>
+                                Saint Cyr sur mer
+                            </div>
+                        </div>
+                        <div class="right_side_text">
+                            <h4 class="content_title">MCDONALD's</h4>
+                            <div class="content_subtitle">Multipurpose team member</div>
+                            <div class="content_text">
+                                Student job alongside to my studies, I take care of different tasks, from the reception of the customers, the taking of order and the cashing to the table service as well as the cleanliness and the safety of the restaurant.                            </div>
+                        </div>
+                    </div>
+                    <div class="work_experience">
+                        <div class="info_right">
+                            <div class="right_side_dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="right_side_info">
+                                2019<br>
+                                Saint Cyr sur mer
+                            </div>
+                        </div>
+                        <div class="right_side_text">
+                            <h4 class="content_title">CASINO</h4>
+                            <div class="content_subtitle">Receptionist</div>
+                            <div class="content_text">
+                                Hostess at the reception of the store, I was in charge of guiding and informing the customers as well as answering their questions or specific requests (return etc..)                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience_container right_container">
+                <div class="title right_side_title">
+                    <div class="icon_title_right">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>RECOMMANDATIONS</h3>
+                </div>
+                <div class="reference_content">
+                    <div class="reference">
+                        <div class="right_side_text">
+                            <h4 class="content_title">BRUCE WAYNE</h4>
+                            <div class="content_subtitle">CEA, Justice League</div>
+                            <div class="content_text">
+                                Phone: 06 12 34 56 78 90<br>
+                                Mail: bruce.wayne@wayneenterprises.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reference">
+                        <div class="right_side_text">
+                            <h4 class="content_title">CLARK KENT</h4>
+                            <div class="content_subtitle">Jounalist, Daily Planet</div>
+                            <div class="content_text">
+                                Phone: 06 09 87 65 43 21<br>
+                                Mail: clark.kent@dailyplanet.com
                             </div>
                         </div>
                     </div>

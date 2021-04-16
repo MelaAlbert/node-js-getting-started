@@ -15,6 +15,11 @@ $secondary-color:#222222;
     flex-direction: row;
 }
 
+#en {
+    display: none;
+    flex-direction: row;
+}
+
 body{
     margin : 0;
     font-family: 'Montserrat', sans-serif;
@@ -84,6 +89,22 @@ h1, h2, h3 {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     z-index: 1;
 
+    .right_container {
+        margin: 10px 0;
+    }
+
+    .flag_container{
+        display: flex;
+        .flag {
+            width: 30px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
     .title_container{
         display: flex;
         flex-wrap: wrap;
@@ -129,6 +150,10 @@ h1, h2, h3 {
                 font-weight: 900;
             }
         }
+
+        .right_side_info {
+            min-width: 150px;
+        }
     }
     .right_side_text {
         flex-basis: 100%;
@@ -152,7 +177,8 @@ h1, h2, h3 {
 
     .right_side_title {
         h3 {
-            margin-bottom: 0;
+            margin: 0;
+            line-height: 2;
         }
         border-bottom: 5px solid $primary-color;
         margin-bottom: 10px;

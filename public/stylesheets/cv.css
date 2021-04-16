@@ -11,6 +11,11 @@
   flex-direction: row;
 }
 
+#en {
+  display: none;
+  flex-direction: row;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -77,6 +82,20 @@ h1, h2, h3 {
   animation: 1s ease-out 0s 1 slideInFromLeft;
   z-index: 1;
 }
+.right .right_container {
+  margin: 10px 0;
+}
+.right .flag_container {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.right .flag_container .flag {
+  width: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
 .right .title_container {
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +136,9 @@ h1, h2, h3 {
 .right .info_right .recent_dot :first-child {
   font-weight: 900;
 }
+.right .info_right .right_side_info {
+  min-width: 150px;
+}
 .right .right_side_text {
   flex-basis: 100%;
 }
@@ -141,7 +163,8 @@ h1, h2, h3 {
   display: flex;
 }
 .right .right_side_title h3 {
-  margin-bottom: 0;
+  margin: 0;
+  line-height: 2;
 }
 .right .right_side_title .icon_title_right {
   height: 40PX;
