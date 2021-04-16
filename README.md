@@ -1,6 +1,6 @@
 # node-js-getting-started
 
-My Resume online using heroku starter kit.
+My Resume online using heroku starter kit : https://melanie-albert.herokuapp.com/
 Powered by node.js app using [Express 4](http://expressjs.com/).
 
 HTML/ejs files is under /view/pages/cv.ejs
